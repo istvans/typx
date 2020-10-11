@@ -7,13 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>500</height>
+    <height>596</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
     <width>400</width>
-    <height>500</height>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>600</height>
    </size>
   </property>
   <property name="focusPolicy">
@@ -39,6 +51,163 @@
     <property name="bottomMargin">
      <number>12</number>
     </property>
+    <item row="1" column="1">
+     <layout class="QGridLayout" name="stats">
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="correctChars">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="correctCharsLabel">
+        <property name="text">
+         <string>Helyes (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="correctInputCountLabel">
+        <property name="text">
+         <string>Helyes (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLabel" name="timeDifference">
+        <property name="text">
+         <string>+00:00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="charCount">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="correctPercent">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="thisTimeLabel">
+        <property name="text">
+         <string>Idő:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="thisTime">
+        <property name="text">
+         <string>00:00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="numberOfPatternsLabel">
+        <property name="text">
+         <string>Bevitel (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="charCountLabel">
+        <property name="text">
+         <string>Karakterek (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="bestTime">
+        <property name="text">
+         <string>00:00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="numberOfPatterns">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="correctCharsPercent">
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="correctInputCount">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Legjobb (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="bestTimeLabel">
+        <property name="text">
+         <string>Legjobb idő:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Legjobb (db):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
     <item row="0" column="1">
      <widget class="QScrollArea" name="scrollArea">
       <property name="horizontalScrollBarPolicy">
@@ -53,7 +222,7 @@
          <x>0</x>
          <y>0</y>
          <width>374</width>
-         <height>394</height>
+         <height>434</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -68,6 +237,37 @@
           <property name="title">
            <string>Bevitel</string>
           </property>
+          <widget class="QWidget" name="verticalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>20</y>
+             <width>171</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="inputBox">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <item>
+             <spacer name="inputSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
         <item row="0" column="0">
@@ -81,95 +281,52 @@
           <property name="title">
            <string>Példák</string>
           </property>
+          <widget class="QWidget" name="verticalLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>160</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="patternBox" stretch="0">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <item>
+             <spacer name="patternSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
        </layout>
       </widget>
      </widget>
     </item>
-    <item row="1" column="1">
-     <layout class="QGridLayout" name="gridLayout_3">
-      <item row="1" column="2">
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>Legjobb idő:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Idő:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLabel" name="numberOfPatterns">
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="4">
-       <widget class="QPushButton" name="saveButton">
-        <property name="text">
-         <string>Mentés</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="4">
-       <widget class="QLabel" name="correctPercent">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>23</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>100%</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <widget class="QLabel" name="bestTime">
-        <property name="text">
-         <string>00:00</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_1">
-        <property name="text">
-         <string>Bevitel (db):</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>Helyes (db):</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLabel" name="thisTime">
-        <property name="text">
-         <string>00:00</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="3">
-       <widget class="QLabel" name="correctInputCount">
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="saveButton">
+      <property name="text">
+       <string>Mentés</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
   <tabstop>saveButton</tabstop>

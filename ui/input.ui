@@ -42,16 +42,6 @@
     <item row="5" column="3">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="reviewButton">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="text">
-         <string>Kész</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="nextButton">
         <property name="enabled">
          <bool>false</bool>
@@ -79,7 +69,7 @@
      </widget>
     </item>
     <item row="2" column="3">
-     <widget class="QLineEdit" name="inputLabel">
+     <widget class="QLineEdit" name="input">
       <property name="maximumSize">
        <size>
         <width>200</width>
@@ -109,7 +99,7 @@
     <item row="0" column="3">
      <widget class="QLabel" name="inputCounter">
       <property name="text">
-       <string>1</string>
+       <string>Hányadik kör a hányból</string>
       </property>
      </widget>
     </item>
@@ -157,7 +147,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
-  <tabstop>inputLabel</tabstop>
+  <tabstop>input</tabstop>
   <tabstop>nextButton</tabstop>
  </tabstops>
  <resources/>

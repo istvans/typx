@@ -9,6 +9,8 @@ verify_ssl = true
 requests = "*"
 fbs = "*"
 pyside2 = "*"
+ipdb = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.8"
